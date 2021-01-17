@@ -134,7 +134,7 @@ namespace ImageFetcher.Images
 
                 if (values.Length != 3)
                 {
-                    throw new ArgumentException("Invalid background colour [" + backgroundColour + "]");
+                    throw new ArgumentException("Invalid background colour [" + backgroundColour + "] requires R,G,B format");
                 }
 
                 var r = ParseColour(values[0]);
