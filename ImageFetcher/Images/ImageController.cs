@@ -49,7 +49,7 @@ namespace ImageFetcher.Controllers
             } catch (Exception ex)
             {
                 _logger.LogError("Failed to fetch image " + ex.Message);
-                throw ex;
+                return StatusCode(500);
             }
         }
 
